@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Pet Registration Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>General Inormation</legend>
+        <!--Nhóm các dữ liệu của biểu mẫu lại với nhau  -->
+            Name :<input type="text" name="name">
+            <br>
+            Species :
+            <input type="radio" name="Species" value="puppy"> Puppy
+            <input type="radio" name="Species" value="kitten"> Kitten
+            <input type="radio" name="Species" value="hamster"> Hamster
+            <input type="radio" name="Species" value="other"> Other 
+            <br>
+            <!-- Loại input radio này chỉ được chọn 1 giá trị trong 1 tập giá trị cho trước / đối với radio phải thêm value để khi server đích đến khi form được gửi đi -->
+            Gender :
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Other">Other
+            <br>
+            Age : <input type="number" name="age" min="1" max="100">
+            <!-- min- max là giới hạn đi từ 1 đến 100 -->
+            <br>
+            <br>
+            Birthday : <input type="date" name="birthday">
+            <br>
+            <br>
+            Address :
+            <select name="City">
+                <option value="HCM">TP HCM</option>
+                <option value="HN">Hà Nội</option>
+                <option value="DN">Đà Nẵng</option>
+                <option value="CT">Cần Thơ</option>
+                <option value="BT">Bến Tr</option>
+                <option value="DL">Đà Lạt</option>
+            </select>
+
+            <select name="district">
+                <option value="ward1">Phường 1</option>
+                <option value="ward2">Phường 2</option>
+                <option value="ward3">Phường 3</option>
+                <option value="ward4">Phường 4</option>
+                <option value="ward5">Phường 5</option>
+
+            </select>
+            <br>
+            Fur Color :
+            <select name="furcolor">
+                <option value="white">While</option>
+                <option value="brown">Brown</option>
+                <option value="black">Black</option>
+                <option value="grey">Grey</option>
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <!--Lựa chọn từ 1 tập giá trị có sẵn nhưng sẽ không trình bày hết ra  -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Pet Photo</legend>
+            Upload photo of your pet here. <br><br>
+            <input type="file" name="petPhoto">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Things pet love</legend>
+            <input type="checkbox" name="love" value="Eating">Eating
+            <input type="checkbox" name="love" value="drink">Drinking
+            <input type="checkbox" name="love" value="sun">Sun Bath
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Things pet hate</legend>
+            <input type="checkbox" name="hate" value="Shower">Shower
+            <input type="checkbox" name="hate" value="Petting">Petting
+            <input type="checkbox" name="hate" value="scold">Scold
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Special Note</legend>
+            <textarea name="special" cols="30" rows="10"></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
