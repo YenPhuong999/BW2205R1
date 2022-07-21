@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* cmt dùng ctrl + ? 
+         backgruond color : đổi màu nền
+         color: đổi màu chữ
+         (điều chỉnh phông chữ)font-family: Verdana, Geneva, Tahoma, sans-serif : phông chữ không chân cho dễ nhìn*/
+        body{
+            background-color: rgb(234, 226, 153);
+            color: rgb(65, 109, 120);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            font-size: 48px;
+            text-align: center;
+        }
+        
+        h2 {
+            background-color: rgb(173, 215, 213);
+            width: 45%;
+            height:30px ;
+            text-decoration: underline;
+            font-style: italic;
+            text-align: center;
+        }
+        /* px: pixcel : độ phân giải màn hình  
+            text-decoration: underline : gạch dưới;
+            font-style: italic : in nghiêng*/
+        img{
+            /* border-width: 5px;
+            border-style: dotted;
+            border-color:chocolate;
+             border-radius: bo góc element */
+            border: 15px dotted brown;
+            border-radius: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Muốn comment thì bấm ctrl? -->
+    <h1>Phan Thi Yen Phuong's Portfolio</h1>
+    <h2>My Photo</h2>
+    <img src="/277518700_2907776519443068_6932575768618037945_n.jpg" alt="myphoto"width="400"height="400">
+
+    <!-- General Information -->
+    <h2>General Information</h2>
+    <h3>Name</h3>
+    <!-- p:paragraph -->
+    <p>Phan Thị Yến Phương</p>
+    <h3>Age</h3>
+    <p>20</p>
+    <h3>Gender</h3>
+    <p>Nữ</p>
+    <h3>Job</h3>
+    <p>Sinh viên Ngành Hệ thống thông tin Quản lí</p>
+    <h3>Date of birth</h3>
+    <p>09/01/2002</p>
+    <h3>Phone number</h3>
+    <p>0337992247</p>
+    <h3>Address</h3>
+    <p>Nguyễn Biểu, Quận 5, TPHCM</p>
+    <h3>Github link</h3>
+    <!-- a: anchor -->
+    <!-- target="sefl" ở cửa sổ hiện tại/ target ="bank" đi qua cửa sổ mới-->
+    <a href="https://github.com/YenPhuong999"target="_bank">This is my Github</a>
+    <br><br>
+    <!-- br : break : ngăn cách -->
+
+    <!-- Âm nhạc -->
+    <h2>Musics</h2>
+    <ol>
+    <!-- ol: danh sách có theo thứ tự: ordered list -->
+        <!-- li : list item -->
+        <!-- link download mp3 trên yt: https://www.y2mate.com/en273/download-youtube -->
+        <li>Bước qua nhau 
+            <audio src="./Audio/y2mate.com - MỸ TÂM  BƯỚC QUA NHAU LIVE ft VŨ  MY SOUL 1981.mp3"controls></audio></audio>
+        </li>
+
+        <li>Lạ lùng
+            <audio src="./Audio/y2mate.com - LẠ LÙNG  Vũ Original.mp3"controls></audio></audio>
+        </li>
+        <li>Hẹn ước từ hư vô
+            <audio src="./Audio/y2mate.com - MỸ TÂM  HẸN ƯỚC TỪ HƯ VÔ LIVE  MY SOUL 1981.mp3"controls></audio></audio>
+        </li>
+        <li>Đúng cũng thành sai
+            <audio src="./Audio/y2mate.com - MỸ TÂM  ĐÚNG CŨNG THÀNH SAI  OFFICIAL MUSIC VIDEO.mp3"controls></audio></audio>
+        </li>
+    </ol>
+    
+    <!-- Sở thích -->
+    <h2>Hobbies</h2>
+    <!-- ul: unordered list -->
+    <ul>
+        <li>Reading Book</li>
+        <li>Travel</li>
+        <li>Sleep</li>
+    </ul>
+
+    <!--Du lịch -->
+    <h2>Travel</h2>
+    <ul>
+        <li> Đà Lạt <br>
+            <video src="./videodulich/y2mate.com - Gioi thieu ve Đa Lat TOÀN TẬP  hicomvn_1080p.mp4" controls width = "500" height="450"></video>
+
+        </li>
+        <li> Phố cổ Hội An <br>
+        <!-- Nhúng iframe trên yt bằng cách nhấn nút share chon Nhúng sau đó copy link dán vào -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lHDuVkIs78o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </li>
+    </ul>
+ 
+    
+</body>
+</html>

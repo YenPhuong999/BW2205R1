@@ -1,0 +1,113 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #5E8FB5;
+   
+}
+header{
+    
+    height: 20%;
+}
+header img{
+    height: 70%;
+    margin:20px ;
+}
+header ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 50px;
+   
+
+}
+header ul li{
+    display: inline-block;
+    margin-right: 50px;  
+}
+
+header ul li:hover{
+    color: yellow;
+    font-weight: 800;    
+}
+header button{
+    background-color: white;
+    color: #5E8FB5;
+    border: 1px solid  #5E8FB5 ;
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    height: 50px;
+    padding:5px 40px;
+}
+
+.banner{
+    width: 100%;
+    height: 70%;
+}
+.intro{
+    background-color: beige;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    padding: 50px 20%; /*trên-dưới : 50px, trái-phải:20%*/
+    box-sizing: border-box; /*kích thích tối đa chiều ngang của trình duyệt*/
+    line-height: 40px; /*chiều cao dòng chữ*/
+}
+.intro button, .welcome button{
+    height: 50px;
+    padding: 5px 40px;
+    background-color: white;
+    color: #5E8FB5;
+    border: 1px solid #5E8FB5;
+    transition-delay: 2s;
+    transition: color 3s; padding: 3s;
+}
+.welcome{
+    background-color: #E1EFF4;
+    padding: 50px 30px ;
+    height: 1800px;
+}
+
+.welcome > h2{
+    text-align: center;
+}
+.welcome>h2::first-letter{
+    font-size: 40px;
+    text-decoration: underline;
+    color: orange;
+}
+.house-intro{
+    width: 46%;
+    height: 600px;
+    background-color: white;
+    float: left;
+    margin-bottom: 50px;
+    margin-right: 50px;
+
+}
+.house-intro:nth-child(4), .house-intro:nth-child(5), .house-intro:nth-child(6){
+    width: 29%;
+    height: 350px;
+}
+.house-intro:nth-child(4) img, .house-intro:nth-child(5) img, .house-intro:nth-child(6) img{
+    height: 50%;
+}
+.house-intro img{
+    width: 100%;
+    height: 400px;
+}
+
+.house-intro p{
+    color:darkgrey;
+}
+
+button:hover{
+    color: brown;
+    border-color: brown;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
